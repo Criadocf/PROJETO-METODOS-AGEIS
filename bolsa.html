@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionário - MET.AGE.</title>
+    <link rel="stylesheet" href="estilo.css"/>
 
 </head>
 
@@ -38,45 +39,40 @@
 
             <div>
                 <label for="qdata">Data</label><br/>
-                <input type="date" id="qdata" name="qdata"><br/><br/>
+                <input type="date" id="qdata" name="qdata">
             </div>
 
             <div>
-                <label for="vendas">VENDA OU COMPRA?</label><br/><br/>
-                <span>
-                    <label for="qvenda">Venda</label>
+                <p for="vendas">VENDA OU COMPRA?</p>
+
+                <div class="position">
+                    <label for="qvenda">Venda</label><br/>
                     <input type="radio" id="qvenda" name="vendas">
-                
-            
+                    
+               
                     <label for="qcompra">Compra</label>
-                    <input type="radio" id="qcompra" name="vendas"><br/><br/>
-                </span>
+                    <input type="radio" id="qcompra" name="vendas">
+                </div>
+                    
+                
+            </div>
+
+            <div>
+                <label for="qsalvar"></label>
+                <input type="submit" id="qsalvar" name="qsalvar" value="SALVAR">
+            </div>
+        
+            <div>   
+                <label for="qlimpar"></label>
+                <input type="reset" id="qlimpar" name="qlimpar" value="LIMPAR">
             </div>
 
     
         </form>
     </section>
 
-    <div>
-        <label for="qsalvar"></label>
-        <input type="submit" id="qsalvar" name="qsalvar" value="SALVAR">
-    </div>
-
-    <div>   
-        <label for="qlimpar"></label>
-        <input type="reset" id="qlimpar" name="qlimpar" value="LIMPAR">
-    </div>
-
-    <div>
-        <h3 id="qnome"></h3>
-        <h3 id="codigo">...</h3>
-        <h3 id="quanti">...</h3>
-        <h3 id="valunit">...</h3>
-        <h3 id="qdata">...</h3>
-        <h3 id="qsalvar">...</h3>
-        <h3 id="operacao">...</h3>
+    
         
-    </div>
 
 
 <script src="bolsa.js" ></script>
